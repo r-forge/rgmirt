@@ -1,0 +1,56 @@
+[
+    {
+        "definitions" : [
+        ],
+        "file" : "C:/Users/gebruiker/Documents/ResMas/thesis/mirt/src/Estep.cpp",
+        "file_last_write" : 1587745165.000000
+    },
+    {
+        "definitions" : [
+        ],
+        "file" : "C:/Users/gebruiker/Documents/ResMas/thesis/mirt/src/Estep.h",
+        "file_last_write" : 1568408643.000000
+    },
+    {
+        "definitions" : [
+        ],
+        "file" : "C:/Users/gebruiker/Documents/ResMas/thesis/mirt/src/Misc.cpp",
+        "file_last_write" : 1568408643.000000
+    },
+    {
+        "definitions" : [
+        ],
+        "file" : "C:/Users/gebruiker/Documents/ResMas/thesis/mirt/src/Misc.h",
+        "file_last_write" : 1568408643.000000
+    },
+    {
+        "definitions" : [
+        ],
+        "file" : "C:/Users/gebruiker/Documents/ResMas/thesis/mirt/src/dpars.cpp",
+        "file_last_write" : 1603647287.000000
+    },
+    {
+        "definitions" : [
+        ],
+        "file" : "C:/Users/gebruiker/Documents/ResMas/thesis/mirt/src/ggum_derivs.cpp",
+        "file_last_write" : 1586915448.000000
+    },
+    {
+        "definitions" : [
+        ],
+        "file" : "C:/Users/gebruiker/Documents/ResMas/thesis/mirt/src/ggum_derivs.h",
+        "file_last_write" : 1568408643.000000
+    },
+    {
+        "definitions" : [
+        ],
+        "file" : "C:/Users/gebruiker/Documents/ResMas/thesis/mirt/src/traceLinePts.cpp",
+        "file_last_write" : 1576808894.000000
+    },
+    {
+        "definitions" : [
+        ],
+        "file" : "C:/Users/gebruiker/Documents/ResMas/thesis/mirt/src/traceLinePts.h",
+        "file_last_write" : 1568408643.000000
+    }
+]
