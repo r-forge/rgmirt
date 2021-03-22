@@ -1,0 +1,43 @@
+set.seed(1)
+theta1 <- matrix(rnorm(10000), ncol=1)
+d1 <- matrix(rnorm(400))
+a1 <- matrix(runif(400,0,2))
+
+a1[1] <- 0
+d1[1] <- 0
+
+pars <- mirt(data1,1, pars = 'values')
+pars[pars$name == 'a1' & pars$item %in% paste0('Item_', 1), ]$value = 0
+pars[pars$name == 'a1' & pars$item %in% paste0('Item_', 1), ]$est = FALSE
+
+
+data1 = simdata(a1, d1, itemtype = '2PL', Theta = theta1)
+data1[sample(length(data1), length(data1)*.8, replace = FALSE)] <- NA
+
+lambdas1 = seq(0,7, length.out = 15)
+lambdas2 = seq(0,7, length.out =15)
+results = matrix(, length(lambdas), 3)
+
+for (i in 1:length(lambdas1))
+{
+  for (j in 1:length(lambdas2))
+  {
+    t1 = Sys.time()
+    rmse <- cv.mirt(data1, 1, 
+                    method = 'EM',
+                    randompars = F, k = c(3,3), 
+                    lambda = c(lambdas1[i],lambdas2[j]), 
+                    a_true = a1, 
+                    d_true = d1, 
+                    theta_true = theta1,
+                    pars = pars)
+    results[i, ] = c(lambdas1[i], lambdas2[j], rmse)
+    print(i/length(lambdas)*100)
+    print(Sys.time()-t1)
+  }
+
+}
+
+cv.en.1d <- list(results=results, theta = theta1, d=d1, a=a1, data = data1)
+
+save(cv.en.1d, file = 'cv_results_1d_en_80.RData')

@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1616062212093.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "5740D9EE",
+    "lastKnownWriteTime" : 1616062227,
+    "last_content_update" : 1616062227157,
+    "path" : "~/ResMas/thesis/test/mirt/R/mirt.R",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "1201,15",
+        "scrollLine" : "1189"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
